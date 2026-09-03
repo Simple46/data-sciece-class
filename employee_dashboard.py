@@ -65,7 +65,7 @@ def display_metrics(filtered_df):
     with col3:
         avg_performance = filtered_df["Performance"].mean() if len(
             filtered_df) > 0 else 0
-        st.metric("📊 Average Salary", f"${avg_performance:,.1f}")
+        st.metric("📊 Average Salary", f"{avg_performance:,.1f}")
 
     with col4:
         remote_pct = (filtered_df["Remote"] == "Yes").sum(
