@@ -103,8 +103,8 @@ selected_price = st.sidebar.slider(
 
 
 # Reset filters
-if st.sidebar.button("Reset Filters"):
-    st.rerun()
+# if st.sidebar.button("Reset Filters"):
+#     st.rerun()
 
 
 # =========================================================
@@ -165,7 +165,7 @@ average_price = (
 if not filtered_df.empty:
     most_common_make = filtered_df["Make"].mode()[0]
 else:
-    most_common_make = "N/A"
+    most_common_make = "0"
 
 
 if not filtered_df.empty:
